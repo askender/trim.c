@@ -3,7 +3,8 @@
 #include <string.h>
 
 char *trim(char *str) {
-    char *start, *end;
+    char *start;
+    const char *end;
     size_t len;
 
     // Check for NULL input

@@ -5,8 +5,13 @@
 #include <string.h>
 
 // Test helper function to compare strings
-void test_trim(const char *input, const char *expected, const char *test_name) {
+static void test_trim(const char *input, const char *expected,
+                      const char *test_name) {
     char *test_str = malloc(strlen(input) + 1);
+    if (test_str == NULL) {
+        printf("✗ %s: FAILED (memory allocation failed)\n", test_name);
+        return;
+    }
     strcpy(test_str, input);
 
     char *result = trim(test_str);
@@ -77,7 +82,7 @@ int main(void) {
 
     // NULL pointer test
     printf("Testing NULL pointer handling:\n");
-    char *null_result = trim(NULL);
+    const char *null_result = trim(NULL);
     if (null_result == NULL) {
         printf("✓ NULL input handling: PASSED\n");
     } else {
@@ -88,7 +93,7 @@ int main(void) {
     printf("\nTesting return value consistency:\n");
     char test_return[] = "  test  ";
     char *original_ptr = test_return;
-    char *returned_ptr = trim(test_return);
+    const char *returned_ptr = trim(test_return);
 
     if (returned_ptr == original_ptr) {
         printf("✓ Return value consistency: PASSED (returns same pointer)\n");
