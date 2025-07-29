@@ -1,10 +1,23 @@
 {
   "name": "trim",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repo": "vendethiel/trim.c",
+  "description": "A lightweight, efficient C library for trimming whitespace from strings in-place",
+  "keywords": [
+    "string",
+    "trim",
+    "whitespace",
+    "c",
+    "library"
+  ],
   "license": "MIT",
+  "author": "vendethiel",
+  "main": "trim.h",
   "src": [
     "trim.c",
-    "trim.h"
-  ]
+    "trim.h",
+    "trim_version.h"
+  ],
+  "dependencies": {},
+  "makefile": "Makefile"
 }
