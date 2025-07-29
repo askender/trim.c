@@ -3,5 +3,8 @@
   "version": "0.0.1",
   "repo": "vendethiel/trim.c",
   "license": "MIT",
-  "src": ["trim.c", "trim.h"]
+  "src": [
+    "trim.c",
+    "trim.h"
+  ]
 }

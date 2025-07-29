@@ -1,6 +1,7 @@
-char *
-trim(char *str)
-{
+#include <ctype.h>
+#include <string.h>
+
+char *trim(char *str) {
   char *end;
 
   // ltrim
@@ -18,7 +19,7 @@ trim(char *str)
   }
 
   // null terminator
-  *(end+1) = 0;
+  *(end + 1) = 0;
 
   return str;
 }
