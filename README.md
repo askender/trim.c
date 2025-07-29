@@ -9,6 +9,7 @@
 ## Example
 
 ```c
-char[] str = "hello world ";
-str = trim(str);
-``` 
+char str[] = "hello world ";
+trim(str);
+printf("%s\n", str); // prints "hello world"
+```
