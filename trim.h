@@ -1,6 +1,11 @@
 #ifndef TRIM_H
 #define TRIM_H
 
+/*
+ * Trim Library - Version 0.1.0
+ * A lightweight, efficient C library for trimming whitespace from strings in-place.
+ */
+
 #include <stddef.h>
 
 /**

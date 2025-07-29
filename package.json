@@ -15,8 +15,7 @@
   "main": "trim.h",
   "src": [
     "trim.c",
-    "trim.h",
-    "trim_version.h"
+    "trim.h"
   ],
   "dependencies": {},
   "makefile": "Makefile"
