@@ -72,7 +72,7 @@ valgrind: $(DEBUG_TARGET)
 # Generate coverage report
 coverage-report: $(COVERAGE_TARGET)
 	./$(COVERAGE_TARGET)
-	gcov $(TRIM_SOURCES)
+	gcov $(COVERAGE_TARGET)-*.gcda
 	@echo "Coverage report generated. Check *.gcov files"
 
 # Static analysis with cppcheck (if available)

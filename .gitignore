@@ -2,6 +2,7 @@
 test
 example
 test_debug
+version_example
 
 # Debug symbols
 *.dSYM/
@@ -14,6 +15,12 @@ test_debug
 *.a
 *.lib
 
+# Coverage files
+*.gcno
+*.gcda
+*.gcov
+test_coverage
+
 # Shared libraries
 *.so
 *.dylib
@@ -22,6 +29,10 @@ test_debug
 # Executables
 *.exe
 *.out
+
+# Analysis and temporary files
+*_ANALYSIS.md
+VERSION_ANALYSIS.md
 
 # IDE and editor files
 .vscode/
